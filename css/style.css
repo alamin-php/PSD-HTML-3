@@ -1,0 +1,302 @@
+/*==============================  
+BASIC SETUP
+================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+	font-family: 'Lora', serif;
+    line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+/*==============================  
+RE-USEABLE CSS STYLE
+================================*/
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+h2{
+	font-size: 4.4rem;
+	margin: 30px 0;
+}
+
+p{
+	font-size: 18px;
+	line-height: 1.5;
+	color: #ffffff;
+	font-weight: 400;
+}
+
+.col {
+    display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+.span_1_of_3 {
+	width: 32.26%; 
+}
+
+
+/*=======================
+TOP-NAV CSS STYLES  
+=========================*/
+.top-nav{ 
+	width: 100%;
+	background: #f7fdfe;
+	/* overflow: hidden; */
+}
+.logo-area{
+	width: 30%;
+	float: left;
+}
+.logo-area .logo{
+	width: 8.5rem;
+	height: auto;
+	margin: 2.5rem 0;
+}
+.main-nav{
+	width: 70%;
+	float: left;
+}
+.main-nav ul{
+	text-align: right;
+	margin: 25px 0;
+}
+.main-nav ul li{
+	display: inline-block;
+	padding-left: 2.5rem
+}
+.main-nav ul li a{
+	color: #82868f;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+.main-nav ul li .sign-in{
+	background: #0ebfdd;
+	padding: 1rem 2rem;
+	color: #ffffff;
+	border-radius: 2rem;
+	transition: 0.5s;
+}
+.main-nav ul li .sign-in:hover{
+	background: #0bb2ce;
+}
+
+/* HERO STYLE CSS */
+.hero-area{
+	background: linear-gradient(rgba(68,68,68,0.6),rgba(68,68,68,0.6)),url(img/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 60vh;
+	position: relative;
+}
+.hero-text{
+	color: #f7fdfe;
+	text-align: center;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.hero-text h2{
+	font-weight: 400;
+}
+
+/* ABOUT STYLE CSS */
+
+.about-area{
+	text-align: center;
+	margin: 60px 0;
+}
+.about-area h2{
+	color: #0ebfdd;
+}
+.about-area p{
+	color: #45494d;
+}
+
+/* Team Area */
+.team-area{
+	text-align: center;
+	background: linear-gradient(rgba(14,191,221,0.9),rgba(14,191,221,0.9)),url(img/team-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+	/* margin: 60px 0; */
+	padding: 60px 0;
+	color: #f7fdfe;
+}
+
+.row{
+	margin: 100px 0;
+	display: block;
+}
+
+.team-member img{
+	height: 15rem;
+	width: 15rem;
+}
+
+.team-member p{
+	margin-top: 2rem;
+	font-weight: 700;
+}
+
+.team-member .role{
+	display: block;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.team-area .work-with-us{
+	margin-top: 5rem;
+	display: inline-block;
+	border: .1rem solid #ffffff;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 900;
+	border-radius: 2.5rem;
+	background: none;
+}
+
+.team-area .work-with-us:hover{
+
+
+}
+
+/* CONTACT STYLE CSS */
+.contact{
+	width: 100%;
+}
+
+.google-map iframe{
+	width: 100%;
+	height: 60vh;
+	vertical-align: middle;
+}
+
+/* FOOTER STYLE CSS */
+
+footer{
+	background: #45494d;
+}
+
+.top-footer-area{
+	width: 100%;
+}
+
+.top-footer-area .nav-area{
+	width: 50%;
+	float: left;
+	padding: 3rem, 0;
+}
+
+.top-footer-area .nav-area ul{
+	padding: 3rem 0;
+}
+
+.top-footer-area .nav-area ul li{
+	display: inline-block;
+	padding-left: 1rem;
+}
+
+.top-footer-area .nav-area ul li a{
+	font-size: 1.6rem;
+}
+
+.top-footer-area .social-area{
+	width: 50%;
+	float: left;
+	padding: 3rem 0;
+}
+
+.top-footer-area .social-area ul{
+	text-align: right;
+}
+
+.top-footer-area .social-area li{
+	display: inline-block;
+	padding-left: 2rem;
+}
+
+.top-footer-area .social-area li:first-child{
+	padding-left: 0;
+}
+
+.top-footer-area .social-area ul li a:link i::before{
+    display: inline-block;
+    border: .1rem solid #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+	transition: 0.5s;
+	text-align: center;
+}
+
+.top-footer-area .social-area ul li a:hover i::before{
+    background: #393939;
+    transform: rotate(360deg);
+}
+
+.main-footer{
+	width: 100%;
+}
+
+.main-footer ul{
+	text-align: right;
+}
+.main-footer ul li{
+	display: inline-block;
+	padding: 1rem 0;
+}
+.main-footer ul li a{
+	font-size: 1.2rem;
+	color: #73767a;
+}
+
+footer hr{
+	border: .1rem solid #73767a;
+}
